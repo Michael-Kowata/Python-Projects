@@ -1,0 +1,6 @@
+num = int(input())
+int1 = num%10
+i=2
+int2 = (num%10**i)//10**(i-1)
+
+print (int1, int2, sep="")
