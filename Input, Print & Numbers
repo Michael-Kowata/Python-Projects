@@ -1,0 +1,22 @@
+name = input()
+
+last_letter = name[-1]
+convert = ord(last_letter)
+
+tens_place = convert//10
+ones_place = convert%10
+
+if (tens_place%2 == 0):
+   tens_place = 0
+else:
+   tens_place = 1
+
+if (ones_place%2 == 0):
+   ones_place = 0
+else:
+   ones_place = 1
+   
+if (tens_place == ones_place):
+   print ("Lsb matches:", tens_place, ones_place)
+else:
+   print ("Lsb does not match:", tens_place, ones_place)
