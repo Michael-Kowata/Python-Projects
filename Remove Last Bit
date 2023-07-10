@@ -1,0 +1,10 @@
+nums = input()
+
+list_nums = nums.split()
+bin1 = int(list_nums[0])
+bin2 = int(list_nums[-1])
+
+bin1 = bin1 >> 1
+bin2 = bin2 >> 1
+
+print (bin1, bin2)
