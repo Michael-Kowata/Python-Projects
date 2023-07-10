@@ -1,0 +1,9 @@
+import math
+year = int(input())
+
+round = year%100
+century = year//100
+if (round > 0):
+   print (century+1)
+elif (round == 0):
+   print (century)
