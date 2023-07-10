@@ -1,0 +1,9 @@
+def excel_column_to_number(column):
+   lengthOfColumn=len(column)
+   answer=0
+   i=0
+   for index in range(lengthOfColumn-1,-1,-1):
+      n=ord(column[index])-64
+      answer=answer+n*(26**i)
+      i=i+1
+   return answer
