@@ -1,0 +1,18 @@
+def plusOne(digits):
+   i=len(digits)-1;
+   out=[]
+   temp=digits[i]+1
+   while(True):
+      if (temp==10):
+         out.insert(0,0);
+         carry=1;     
+      else:
+         out.insert(0, temp);
+         carry=0;
+      i=i-1;
+      if (i<0):
+         if (carry == 1):
+            out.insert(0,1);
+         break;
+      temp=digits[i]+carry;
+   return out;
