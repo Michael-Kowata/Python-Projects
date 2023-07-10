@@ -1,0 +1,6 @@
+letters = input()
+
+first_letter = letters[0]
+second_letter = letters[1]
+
+print ((ord(first_letter)-64)*26 + (ord(second_letter)-64))
